@@ -1,0 +1,262 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.39)),
+    url(../image/hero-bg.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.navo2{
+  position: relative;
+}
+.navo2::after{
+  content: "";
+  background-color: white;
+  width: 0%;
+  position: absolute;
+  height: 2px;
+  transition: 1s;
+ 
+}
+.nav-item:hover::after{
+
+  width: 100%;
+}
+.navo::after{
+  content: "";
+  background-color: white;
+  width: 40px;
+  position: absolute;
+  height: 4px;
+  transform: translate(-50%,-50%);
+  bottom: 0;
+right: 49%;  
+ 
+}
+
+.color {
+  color: beige;
+}
+
+.size {
+  font-size: 4.6875rem;
+}
+
+
+.icon {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.5rem solid rgb(64, 120, 255);
+  margin: 0rem 7.8125rem;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+.icon:hover {
+  background-color: rgb(64, 120, 255);
+  border-color: #9ec5fe;
+}
+
+.card {
+  border-radius: 1.25rem;
+  box-shadow: 0 0.8125rem 0.5rem -0.625rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.underline2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.875rem;
+  height: 0.3125rem;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,-50%);
+  border: 0.2rem solid rgb(64, 120, 255);
+ 
+}
+
+.underline1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6.25rem;
+  left: 1%;
+  border: 0.2rem solid rgb(64, 120, 255);
+  margin-bottom: 1.25rem;
+}
+
+.background {
+  background-image: linear-gradient(rgba(12, 12, 226, 0.925),
+      rgba(29, 29, 221, 0.801)),
+    url(../image/post-3.jpg);
+  height: 60vh;
+}
+@media (max-width:992px) {
+  .background {
+    
+    height: fit-content;
+  }
+}
+
+.icon2 {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0.5rem solid #9ec5fe;
+  border-radius: 50%;
+}
+
+.hover {
+  transition: 1s;
+}
+
+.hover:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.testimonial {
+  background-image: linear-gradient(rgba(2, 93, 240, 0.473),
+      rgba(1, 98, 255, 0.541)),
+    url(../image/overlay-bg.jpg);
+  background-size: cover;
+}
+
+.my-carousel-item {
+  margin: auto;
+  margin-top: 11.25rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+.my-travel {
+  transition: 1s;
+}
+
+.my-travel:hover {
+  color: rgb(64, 120, 255);
+  cursor: pointer;
+}
+
+.bg-primary {
+  /* top: 13.75rem;
+  margin: auto; */
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+}
+
+section.footer {
+  background-image: linear-gradient(rgba(2, 93, 240, 0.733),
+      rgba(1, 98, 255, 0.671)),
+    url(../image/overlay-bg.jpg);
+  background-size: 100% 100%;
+}
+@media (max-width:992px) {
+  section.footer {
+    background-image: linear-gradient(rgba(2, 93, 240, 0.733),
+        rgba(1, 98, 255, 0.671)),
+      url(../image/overlay-bg.jpg);
+    background-size: 100% 100%;
+    height: fit-content;
+  }
+}
+.icons {
+  width: 3.375rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: 4px solid   rgb(104, 157, 242)  ;
+  text-align: center;
+  margin-top: 0.75rem 25px;
+  transition:2s ;
+  line-height: 2.5625rem;
+  
+}
+.icons:hover {
+  background-color: rgb(64, 120, 255);
+  cursor: pointer;
+}
+.underline3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6.25rem;
+  left: 1%;
+  border: 0.2rem solid rgb(64, 120, 255);
+  margin-bottom: 1.25rem;
+}
+.underline4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6.25rem;
+  left: 1%;
+  border: 0.2rem solid rgb(64, 120, 255);
+  margin-bottom: 1.25rem;
+}
+p.animation::after {
+  content: "";
+  animation: type 12s infinite alternate;
+  -webkit-animation: type 12s infinite alternate;
+}
+.animation {
+  transform: translateY(-150px);
+
+}
+
+@keyframes type {
+1% {content: "De|"}
+3% {content: "Dev|"}
+4% {content: "Dev|"}
+6% {content: "Deve|"}
+8% {content: "Devel|"}
+10% {content: "Develo|"}
+12% {content: "Develop|"}
+14% {content: "Develobe|"}
+16% {content: "Developer|"}
+18% {content: "Des|"}
+20% {content: "Desi|"}
+22% {content: "Desig|"}
+24% {content: "Design|"}
+26% {content: "Designe|"}
+28% {content: "Designer|"}
+30% {content: "F|"}
+32% {content: "Fr|"}
+34% {content: "Fre|"}
+36% {content: "Free|"}
+38% {content: "Frel|"}
+40% {content: "Freela|"}
+42% {content: "Freelan|"}
+44% {content: "Freelanc|"}
+46% {content: "Freelance|"}
+48% {content: "Freelancer|"}
+50% {content: "p|"}
+52% {content: "ph|"}
+54% {content: "pho|"}
+56% {content: "phot|"}
+58% {content: "photo|"}
+60% {content: "photog|"}
+62% {content: "photogr|"}
+64% {content: "photogra|"}
+66% {content: "photograp|"}
+68% {content: "photograph|"}
+70% {content: "photographe|"}
+72% {content: "photographer|"}
+74% {content: "Des|"}
+76% {content: "Desi|"}
+78% {content: "Desig|"}
+80% {content: "Design|"}
+82% {content: "Designe|"}
+84% {content: "Designer|"}
+86% {content: "fre|"}
+88% {content: "free|"}
+90% {content: "freel|"}
+92% {content: "freela|"}
+94% {content: "freelanc|"}
+96% {content: "freelanc|"}
+98% {content: "freelance|"}
+100% {content: "freelancer|"}
+
+}
